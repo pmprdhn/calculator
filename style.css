@@ -1,7 +1,5 @@
-/* style.css */
-
 @font-face {
-  font-family: 'MyFont'; /* you can name it anything */
+  font-family: 'MyFont'; 
   src: url('digital-7/digital-7.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -9,16 +7,16 @@
 
 body {
   margin: 0;
-  font-family: 'MyFont', sans-serif ;  /* use the custom font */
+  font-family: 'MyFont', sans-serif ;  
   display: flex;
-  justify-content: center;   /* horizontal centering */
-  align-items: center;       /* vertical centering */
-  background-color: #f0f0f0; /* optional: light background */
+  justify-content: center;   
+  align-items: center;       
+  background-color: #f0f0f0; 
 
 
 }
 p {
-  font-family: 'MyFont', sans-serif ;  /* use the custom font */
+  font-family: 'MyFont', sans-serif ;  
   text-align: center;
   color: #333;
   margin: 0;
@@ -47,21 +45,21 @@ p {
   background-color: rgb(126, 211, 126);
   font-family: 'MyFont', sans-serif ;  
   border-radius: 20px;
-  transform: scale(2); /* adjust scale factor as needed */
-  transform-origin: top center; /* keeps it centered nicely */
+  transform: scale(2); 
+  transform-origin: top center; 
 }
 
 #keys{
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 10px; /* space between buttons */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
   margin-top: 20px;
   font-family: 'MyFont', sans-serif ;  
   border-width: 2px;
 
 }
 .equals{
-  grid-column: span 4; /* make equals button span 2 columns */
+  grid-column: span 4; 
   
 }
 
@@ -72,9 +70,9 @@ button {
 }
 
 button:hover {
-  background-color: #ddd; /* light gray on hover */
+  background-color: #ddd; 
 }
 
 button:active {
-  background-color: #ccc; /* darker gray on click */
+  background-color: #ccc; 
 }
