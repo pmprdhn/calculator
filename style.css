@@ -1,0 +1,80 @@
+/* style.css */
+
+@font-face {
+  font-family: 'MyFont'; /* you can name it anything */
+  src: url('digital-7/digital-7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'MyFont', sans-serif ;  /* use the custom font */
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  background-color: #f0f0f0; /* optional: light background */
+
+
+}
+p {
+  font-family: 'MyFont', sans-serif ;  /* use the custom font */
+  text-align: center;
+  color: #333;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.display{
+  border-radius: 5px;
+  border: 2px solid #000;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  width: 100%;
+  font-family: 'MyFont', sans-serif ;  
+  border-radius: 50px;
+  color: black;
+
+}
+
+#calculator {
+  
+  border: 2px solid #000;
+  padding: 20px;
+  margin-top: 180px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(126, 211, 126);
+  font-family: 'MyFont', sans-serif ;  
+  border-radius: 20px;
+  transform: scale(2); /* adjust scale factor as needed */
+  transform-origin: top center; /* keeps it centered nicely */
+}
+
+#keys{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px; /* space between buttons */
+  margin-top: 20px;
+  font-family: 'MyFont', sans-serif ;  
+  border-width: 2px;
+
+}
+.equals{
+  grid-column: span 4; /* make equals button span 2 columns */
+  
+}
+
+button {
+  font-family: 'MyFont', sans-serif;
+  border-radius: 0%;
+  border-style: solid;
+}
+
+button:hover {
+  background-color: #ddd; /* light gray on hover */
+}
+
+button:active {
+  background-color: #ccc; /* darker gray on click */
+}
